@@ -1,0 +1,167 @@
+html {
+    background-color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.group:before,
+.group:after {
+    display: table;
+    content: "";
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+header h1,
+header p {
+    text-transform: uppercase;
+    color: rgb(30, 54, 30);
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+header .background-img {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    background: white url("../IMAGES/o-HOTEL-ROOM-facebook.jpg") center center no-repeat;
+    background-size: cover;
+}
+/* banner Overlay */
+.image-banner {
+    position: relative;
+}
+.descriptive-text {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .65);
+    width: 100%;
+    margin: 0;
+}
+h3, h4 {margin: 0;
+padding: 5px 20px;}
+
+/*End of banner Overlay*/
+.fa-twitter  {
+    color: white;
+    background-color: rgb(27, 118, 223);
+    font-size: 30px;
+    padding: 5px;
+
+}
+.fa-whatsapp {
+    color: white;
+    background-color: green;
+    padding: 5px;
+    font-size:  30px;
+}
+
+.social-media li {
+    list-style: none;
+    float: left;
+    margin-right: 50px;
+}
+.fa-hotel {
+    animation: FadeBounce 1s forwards;
+    color: yellow;
+    background-color:rgb(30, 54, 30);
+    padding: 5px;
+    margin-right: 5px;
+    padding: 10px 20px;
+}
+.btn{
+    color: yellow;
+    font-size: large;
+}
+
+/*Animation Styles*/
+@keyframes FadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    45% {opacity: 1;
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(-6px);
+    }
+    75% {
+        
+        transform: translateY(0%);
+    }
+    90% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+/* enbd of Animation Styles*/
+
+/*Declarative toggle Styles*/
+.toggle-btn {
+    display: none;
+}
+.toggle-btn-visible {
+    display: block;
+}
+.toggle-target-hidden {
+    display: none;
+}
+.toggle-target-expanded {
+    display: block;
+}
+.read-more{
+    transition: all 2s ease;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+/*End of Declarative Toggle Styles*/
+
+/*Site-Navigation Styles*/
+.site-nav li{
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+.site-nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.site-nav a:hover {
+    color: yellow;
+}
+
+/*Cycle-slideshow styles */
+.cycle-slideshow {
+margin-bottom : 25px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+flex-basis: 40%;
+}
+/*End cycle-slideshow styles*/
+
+.details {
+    flex-basis: 40%;
+    font-size: 120%;
+}
+
+.details h1 {
+    text-transform: uppercase;
+}
+.all-section {
+    margin: 0;
+}
+
+/*End of Site-Naviagtion Styles*/;
